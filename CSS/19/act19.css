@@ -1,0 +1,23 @@
+/*CSS de act19.html*/
+
+nav a:link,a:visited,a:focus{
+	color:grey;
+	
+} 
+
+nav a:hover{
+	color:white;
+	background-color:burlywood;
+	
+}
+
+h2, nav{
+	margin:0 25%;
+}
+
+nav a img{
+	width:50px;
+	position:relative;
+	left:20em;
+	top:0.5em;
+}

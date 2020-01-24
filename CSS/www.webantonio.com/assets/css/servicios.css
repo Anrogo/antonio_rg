@@ -1,0 +1,28 @@
+/*CSS solo para servicios.html*/
+
+.main{
+	background-color:white;
+	margin-bottom: 3%;
+	margin-top:5%;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tr, th, td{
+	border:1px solid cadetblue;
+	padding:1%;
+	width:30%;
+}
+
+table caption{
+	color:#64152794;
+	background:grey;
+	caption-side: bottom;
+}
+
+tr,td{
+  background-color:bisque;
+  text-align: justify;
+}

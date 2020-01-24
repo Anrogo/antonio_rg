@@ -1,0 +1,221 @@
+
+ul,ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+h1,h2,h3,p,form {
+  margin: 0;
+  padding: 0;
+}
+
+.clear { clear: both; }
+
+img{ border: none; }
+
+main { 
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px":"auto");
+  margin: 0 auto
+}
+
+header, nav, aside, #contenido, #contenido #principal, #contenido #secundario, footer {
+  border: 2px solid #777;
+}
+
+header { clear: both; }
+
+nav { clear: both; }
+
+aside {
+    float: left;
+    width: 20%;
+}
+
+#contenido {
+    float: right;
+    width: 78%;
+}
+
+#contenido #principal { 
+    float: left;
+    width: 78%;
+}
+
+#contenido #secundario {
+    float: right;
+    width: 20%;
+}
+
+footer { clear: both; }
+
+header #logo { float: left; }
+
+header #buscador { float: right }
+
+nav ul#menu_principal li{
+  display: inline;
+  float: left;
+}
+
+#contenido #principal article img {
+  width: 100px;
+  float: left;
+}
+
+footer .enlaces{ float: left; }
+
+footer .copyright { float: right; }
+
+/* === IMPORTANTE ===================================================
+   A partir de aquí, se pueden añadir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */
+
+/*Ejercicio 9*/
+header {
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+nav {
+  padding: 0.5em;  
+  margin-bottom: 0.5em;
+}
+
+#noticias, #publicidad, #principal, #segundario {
+  padding: 1em;
+}
+
+footer {
+  padding: 0.5em 0;
+}
+
+article {
+  padding: 1em;
+}
+
+article img{ 
+  padding: 0.5em;
+}
+
+#publicidad{
+  padding-top: 1em;
+}
+
+footer {
+  margin-top: 0.5em;
+}
+
+
+/*Corrección, por mi cuenta de estilos para que se queden igual las cajas de aside y section*/
+
+aside {
+  width:20%;
+  font-size:15px;
+  text-align:left;
+}
+
+aside ul li a {
+  font-size:15px;
+}
+
+aside h3{
+  font-size:18px;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 22px;
+}
+
+#contenido #principal { 
+    width: 69%;
+}
+
+#contenido #secundario {
+    width: 23%;
+}
+
+#contenido {
+  font-size: 14px;
+}
+
+#principal article h2 {
+  margin-top: 0px;
+  padding-bottom: 1em;
+}
+
+#secundario {
+  padding:0.5em;
+}
+
+#publicidad{
+  margin-top:5%;
+}
+
+/*Ejercico 10:*/
+/*Eliminar bordes lo bruto: *{border:none!important;} */
+/*Forma normal, elemento a elemento:*/
+
+header, nav, aside, #contenido, #contenido #principal, #contenido #secundario, footer {
+  border:none;
+}
+
+nav {
+  border-bottom:1px solid #004C99;
+}
+
+#noticias {
+  border:1px solid #C5C5C5;
+}
+
+#publicidad {
+  border:1px dotted #CC6600;
+}
+
+#secundario {
+  border:1px solid #CC6600!important;
+}
+
+footer {
+  border-top:1px solid #C5C5C5;
+  border-bottom:1px solid #C5C5C5;
+}
+
+/*Ejercico 11:*/
+
+/*1*/
+#noticias,footer {
+	background-color:#F8F8F8;
+}
+
+/*2*/
+#publicidad {
+	background-color:#FFF6CD;
+}
+
+/*3*/
+#secundario h2 {
+	background-color:#DB905C;
+	padding:.2em;
+}
+
+/*4*/
+nav {
+  background-image:url("imagenes/fondo_menu.gif");
+}
+
+/*5*/
+header #logo {
+  background-image:url("imagenes/logo.gif");
+  background-repeat: no-repeat;
+  padding:0.5em;
+}
+/*Hay que hacer "desaparecer" ese título
+para que se vea la imagen únicamente*/
+header h1 {
+  opacity: 0;
+}

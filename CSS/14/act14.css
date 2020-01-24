@@ -1,0 +1,62 @@
+/*CSS de la tabla act14.html*/
+
+table {
+  font-family:arial;
+}
+
+table, th, td {
+  border:1px solid #333;
+  border-collapse: collapse;
+  padding:.3em;
+}
+
+thead,tbody {
+  text-align: center;
+}
+
+thead {
+  background-color:#E4E4E4;
+}
+
+tbody th{
+  background-color:#e6f3ff;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 1.1em;
+  text-align:left;
+}
+
+tbody tr:nth-child(even){/*odd permiter seleccionar las filas impares*/
+  background-color:#FFFFCC;
+}
+
+.euro {
+  background-image:url("Img_act14/euro.png");  
+}
+
+.dolar {
+  background-image:url("Img_act14/dolar.png");  
+}
+
+.libra {
+  background-image:url("Img_act14/libra.png");  
+}
+
+.yen {
+  background-image:url("Img_act14/yen.png");  
+}
+
+td:hover {
+  background:#FFFF66;
+}
+
+
+
+
+
+
+
+
+
+
+

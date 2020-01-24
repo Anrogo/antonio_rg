@@ -1,0 +1,20 @@
+/*CSS de act3.html*/
+
+	@media { /*a todos*/
+		p {
+			color:blue;
+		}
+		h1 {
+			font-size:20px;
+		}
+	} 
+	@media print { /*el de impresión*/
+		h1 {
+			font-size:14px;
+			}
+	}
+	@media tv { /*en TV*/
+		ul {
+			text-align:center;
+			}
+	}

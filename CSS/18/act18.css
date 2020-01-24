@@ -1,0 +1,16 @@
+/*CSS de act18.html*/
+
+.divPadre div{
+	margin:40px;
+	padding:30px;
+	overflow: scroll;
+} 
+
+/*lo fijo, con position:fixed, a la parte de abajo 
+diciéndole que se mantenga a 0 px del bottom*/
+.div3 {
+	height:100px;
+	background-color:yellow;
+	position:fixed;
+	bottom:0px;
+}

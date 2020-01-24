@@ -1,0 +1,75 @@
+/*CSS de act20.html*/
+
+body {
+    font-family: arial;
+    background-color: rgb(192, 145, 59);
+}
+
+header {
+    padding: 0.8em;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+/*Main: es el contenedor principal, dejaré su fondo blanco y en formato de bloque con overflow en automático*/
+main {
+    background-color: white;
+    overflow: auto;
+    display: block;
+}
+
+/*Los section son los contenedores de artículos y deben "fluir" dependiendo de las dimensiones de la ventana, 
+por lo que les asigno un float -> left que los deja "colgando" del main*/
+section {
+    float: left;
+    width: 34rem;
+    border:  #be952d 5px solid;
+    border-top: none;
+    margin: 10px;
+    background-color: #cccc6fcf;
+}
+
+
+/*Los estilos de los artículos son importantes, a la hora de como se verán dentro de cada section.
+También se les asigna la propiedad float con el valor left y una anchura de 15 rem que vendría a ser como un 44% del espacio*/
+article {
+    border: #ff7700 5px solid;
+    background-color:#ceceb4;
+    margin:8px;
+    width: 15rem;
+    float:left;
+}
+
+/*Alineación justificada del texto de los párrafos y algo de padding para que no se vea tan pegado*/
+article p {
+    padding: .6em;
+    text-align: justify;
+}
+
+h1 {
+    margin:0;
+}
+
+/*He especificado que es el h2 de los section, para que no cambie el h2 del footer*/
+section h2 {
+    margin:0;
+    background-color: #be952d;
+    text-align:center;
+}
+
+
+h3 {
+    background-color: #ff7700;
+    color: white;
+    padding-left:5px;
+    margin-top:0;/*Permite ver el título acorde a lo que es el borde*/
+}
+
+/*Por último encontramos el footer, que necesita "obviar" 
+el float del main y por eso se le añade la propiedad clear:both que lo devuelve a su estado normal*/
+footer {
+    clear:both;
+    background-color: rgb(192, 145, 59);
+    padding: 0.8em;
+    margin-top: 1.2em;
+}

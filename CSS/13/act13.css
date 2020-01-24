@@ -1,0 +1,30 @@
+/*CSS de act13.html*/
+
+ul.menu {
+	width:180px;
+	list-style-image: url("Img_act13/flecha_inactiva.png");
+	list-style-position: inside;
+}
+
+ul.menu li{
+	border:1px solid #7C7C7C;
+	background-color: #F4F4F4;
+	padding:.5em 0 .4em .5em;
+}
+
+ul.menu li a{
+	display:inline-block;
+	text-decoration:none;
+	color:#333;
+}
+
+ul.menu li:hover{
+	background-color:#E4E4E4;
+	list-style-image: url("Img_act13/flecha_activa.png");
+}
+
+
+
+
+
+

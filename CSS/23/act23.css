@@ -1,0 +1,86 @@
+/*Archivo CSS de la actividad 23, act23.html*/
+
+/*------------------------------MEDIA QUERIES-----------------------------------------*/
+
+/*Estilos comunes en cuanto a dispositivos y resoluciones se refiere, para toda la lista de programas*/
+@media all{
+    body {
+        background-color: #e0e1eb;
+        font-family: sans-serif;
+    }
+    h1.titulo {
+        color:#fdfdfb;
+        background-color:#30324b;
+        font-size:3em;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom:15px;/*Sea cual sea la resolución impedirá que se pegue el título principal con el de la sección de debajo*/
+    }
+    /*Todas las secciones y sus artículos siguen este patrón de estilos:*/
+    section h2 {
+        color:#fdfdfb;
+        background-color:#30324b;
+        font-size:1.2em;
+        font-weight: bold;
+        margin:0 5px;
+        text-align:center; 
+    }
+
+    /*Estilos para todo el conjunto de artículo: h1 y p*/
+    article {
+        margin:10px auto;
+        width:85%;
+    }
+    
+    /*titulos de los artículos*/
+    article h1{
+        color:#fdfdfb;
+        background-color: #33a939;
+        font-size:1.2em;
+        font-weight: bold;
+        padding-left:5px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px ;
+    }
+    
+    /*párrafos de los artículos*/
+    article p {
+        background-color:#fefefe;
+        margin-top:0px;
+        padding:5px;
+        font-size:.8em;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px ;
+    }
+}
+
+/*Estilos con media queries, para pantallas de más de 1024 px y por debajo de estas*/
+/*Cuando la pantalla sea mayor de 1024px*/
+@media (min-width:1024px){
+   
+    /*Colocación en paralelo de los section cuando la pantalla es mayor de 1024px*/
+    section {
+        float:left;
+        width:35%;
+        position: relative;
+        
+    }
+    section#escritorio, section#internet {
+        border-right:2px solid #30324b;
+        border-left:2px solid #30324b;
+        margin-top:15px;
+    }
+    section#escritorio {
+        left:6%;
+    }
+    section#internet {
+        left:16%;
+    }
+    
+    
+}
+
+/*Y cuando las dimensiones de pantalla sean menor de 1024 hace el estilo por defecto que es mostrarlo todo en la misma columna*/
+
+
+
